@@ -13,6 +13,7 @@ describe("createToken", function () {
     });
   });
 
+
   test("works: admin", function () {
     const token = createToken({ username: "test", isAdmin: true });
     const payload = jwt.verify(token, SECRET_KEY);
@@ -34,3 +35,5 @@ describe("createToken", function () {
     });
   });
 });
+
+
